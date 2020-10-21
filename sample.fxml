@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <children>
+
+        <Text layoutX="300.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сформировать заявку" />
+
+        <Text layoutX="41.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.Выбирите курсы" />
+
+        <Text layoutX="223.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2,Укажите формат файла" />
+
+        <Text layoutX="201.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3, Введите название файла" />
+
+        <Text layoutX="402.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4,Введите путь файла" />
+
+        <Text layoutX="202.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" />
+
+        <Text layoutX="202.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" />
+
+        <Text layoutX="201.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество" />
+
+        <Text fx:id="controlText" layoutX="212.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="пустое" />
+
+        <CheckBox layoutX="41.0" layoutY="121.0" mnemonicParsing="false" onAction="#cek" text="Java" />
+
+        <CheckBox layoutX="41.0" layoutY="175.0" mnemonicParsing="false" onAction="#cek" text="C#" />
+
+        <CheckBox layoutX="41.0" layoutY="226.0" mnemonicParsing="false" onAction="#cek" text="C++" />
+
+        <CheckBox layoutX="41.0" layoutY="281.0" mnemonicParsing="false" onAction="#cek" text="Pyhton" />
+
+        <CheckBox layoutX="41.0" layoutY="334.0" mnemonicParsing="false" onAction="#cek" text="Html" />
+
+        <RadioButton layoutX="205.0" layoutY="85.0" mnemonicParsing="false" onAction="#cek1" text=".txt" />
+
+        <RadioButton layoutX="305.0" layoutY="85.0" mnemonicParsing="false" onAction="#cek1" text=".pdf" />
+
+        <RadioButton layoutX="417.0" layoutY="85.0" mnemonicParsing="false" onAction="#cek1" text="docx" />
+
+        <Button layoutX="430.0" layoutY="240.0" mnemonicParsing="false" onAction="#cek2" text="Оформить" />
+
+        <TextField fx:id="fileName" layoutX="201.0" layoutY="138.0" />
+
+        <TextField fx:id="pathFile" layoutX="371.0" layoutY="138.0" />
+
+        <TextField fx:id="name" layoutX="261.0" layoutY="215.0" />
+
+        <TextField fx:id="famil" layoutX="261.0" layoutY="240.0" />
+
+        <TextField fx:id="otch" layoutX="261.0" layoutY="264.0" />
+      <Button layoutX="440.0" layoutY="164.0" mnemonicParsing="false" onAction="#path" text="Путь" />
+      <Button layoutX="412.0" layoutY="215.0" mnemonicParsing="false" onAction="#open" text="открыть файл" />
+      <Line endX="-27.0" endY="321.5" layoutX="201.0" layoutY="45.0" startX="-27.0" startY="-45.0" />
+      <Line endX="385.5" layoutX="151.0" layoutY="113.0" startX="-151.0" />
+      <Line endX="332.5" layoutX="203.0" layoutY="196.0" startX="-29.5" />
+
+    </children>
+
+</Pane>
